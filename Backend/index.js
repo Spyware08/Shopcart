@@ -16,17 +16,15 @@ const cors_options = {
 };
 
 connectToDB()
-app.use(cors("*"))
+app.use(cors(cors_options))
 app.use(express.json()) 
-app.get("/",(req,res)=>{
-    res.sendStatus(202)
-})
 
-app.get('/',(req,res)=>{
-  res.json({
-    message:'bad request'
-  })
-})
+
+// app.get('/',(req,res)=>{
+//   res.json({
+//     message:'bad request'
+//   })
+// })
 
 app.use(SignupRoute)
 app.use(LoginRoute)
