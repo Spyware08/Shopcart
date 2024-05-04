@@ -1,6 +1,6 @@
 import axios from "axios";
 const API = axios.create({
-    baseURL: "https://shopcart-51mp.onrender.com",
+    baseURL: "https://shopcart-backend-pearl.vercel.app",
 
     timeout: 10000, // 10 seconds in milliseconds
     headers: {
