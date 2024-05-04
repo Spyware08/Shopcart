@@ -16,7 +16,7 @@ const cors_options = {
 };
 
 connectToDB()
-app.use(cors(cors_options))
+app.use(cors("*"))
 app.use(express.json()) 
 app.get("/",(req,res)=>{
     res.sendStatus(202)
