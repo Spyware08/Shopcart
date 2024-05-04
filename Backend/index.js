@@ -8,7 +8,7 @@ const app = express()
 
 const port = 8080
 const cors_options = {
-    origin: ["https://shop-cart-client-lyart.vercel.app"],
+    origin: ["https://shopcart-csng.vercel.app"],
     methods:["GET","POST"],
     credentials: true,
 
