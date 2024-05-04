@@ -19,7 +19,7 @@ async function Userdata(data) {
                 const user_data = await Usermodel.create(data);
                 if (user_data) {
                     console.log("data created in mongo", user_data);
-                    res.status(201).json({ message: "User data created successfully" });
+                    // res.status(201).json({ message: "User data created successfully" });
                     return true;
                 }
                 return false;
