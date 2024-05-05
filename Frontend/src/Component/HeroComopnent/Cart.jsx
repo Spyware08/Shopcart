@@ -69,9 +69,9 @@ export default function Cart() {
           )}
         </div>
       </div>
-      <ToastContainer
+      <ToastContainer className="max-[450px]:w-[15rem] max-[450px]:ml-[170px] max-[450px]:mt-2"
         position="top-right"
-        autoClose={1500}
+        autoClose={1000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick

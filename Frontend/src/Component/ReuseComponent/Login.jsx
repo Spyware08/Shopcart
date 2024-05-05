@@ -23,7 +23,7 @@ export default function LoginAccount() {
 
       try {
         const res = await API.post("/login", log_data);
-        localStorage.setItem("userData", JSON.stringify(res.data.userdata));
+        sessionStorage.setItem("userData", JSON.stringify(res.data.userdata));
           return navigate("/");
 
       } catch (e) {
@@ -77,7 +77,7 @@ export default function LoginAccount() {
           </form>
         </div>
       </div>
-      <ToastContainer
+      <ToastContainer className="max-[450px]:w-[15rem] max-[450px]:ml-[170px] max-[450px]:mt-2"
         position="top-right"
         autoClose={1500}
         hideProgressBar={false}

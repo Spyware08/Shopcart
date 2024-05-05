@@ -17,7 +17,7 @@ function ElectronicDetails() {
     console.log(product.id);
 
     useEffect(() => {
-        const storedUserData = localStorage.getItem("userData");
+        const storedUserData = sessionStorage.getItem("userData");
         if (storedUserData) {
             setUserData(JSON.parse(storedUserData));
         }

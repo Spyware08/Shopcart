@@ -8,7 +8,9 @@ const app = express()
 
 const port = 8080
 const cors_options = {
-    origin: "https://shopcart-delta.vercel.app",
+    origin: ["https://shopcart-delta.vercel.app"],
+
+    methods:["GET","POST"],
     credentials: true,
 
 };
@@ -17,12 +19,6 @@ connectToDB()
 app.use(cors(cors_options))
 app.use(express.json()) 
 
-
-// app.get('/',(req,res)=>{
-//   res.json({
-//     message:'bad request'
-//   })
-// })
 
 app.use(SignupRoute)
 app.use(LoginRoute)

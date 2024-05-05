@@ -30,7 +30,7 @@ export default function Navbar() {
 
 
     useEffect(() => {
-        const storedUserData = localStorage.getItem("userData");
+        const storedUserData = sessionStorage.getItem("userData");
         if (storedUserData) {
             setUserData(JSON.parse(storedUserData));
         }

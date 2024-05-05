@@ -10,7 +10,7 @@ export default function Username(props) {
         setdropDown(!dropDown)
     }
     const clearCookie = () => {
-        localStorage.clear()
+        sessionStorage.clear()
         location.reload();
         navigate("/")
     }
