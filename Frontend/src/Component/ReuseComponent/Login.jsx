@@ -22,6 +22,7 @@ export default function LoginAccount() {
 
       try {
         const res = await API.post("/login", log_data);
+        toast.loading("Please wait")
         sessionStorage.setItem("userData", JSON.stringify(res.data.userdata));
         return navigate("/");
 
