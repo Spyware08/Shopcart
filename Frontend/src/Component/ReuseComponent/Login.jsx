@@ -18,11 +18,11 @@ export default function LoginAccount() {
         email: email,
         password: password
       };
-      console.log("log data is", log_data);
+      // console.log("log data is", log_data);
 
+      toast.loading("Please wait")
       try {
         const res = await API.post("/login", log_data);
-        toast.loading("Please wait")
         sessionStorage.setItem("userData", JSON.stringify(res.data.userdata));
         return navigate("/");
 
