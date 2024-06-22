@@ -13,6 +13,7 @@ export default function LoginAccount() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    toast.loading("Please wait")
     if (email && password) {
       let log_data = {
         email: email,
@@ -20,7 +21,6 @@ export default function LoginAccount() {
       };
       // console.log("log data is", log_data);
 
-      toast.loading("Please wait")
       try {
         const res = await API.post("/login", log_data);
         sessionStorage.setItem("userData", JSON.stringify(res.data.userdata));
