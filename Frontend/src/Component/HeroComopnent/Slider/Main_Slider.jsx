@@ -18,7 +18,7 @@ export default function Main_Slider() {
                 disableOnInteraction: false,
             }}
             effect="fade"
-            loop={true} // Enable infinite loop
+            loop={true} 
             pagination={{
                 clickable: true,
             }}

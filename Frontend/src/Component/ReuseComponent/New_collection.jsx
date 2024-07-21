@@ -5,11 +5,9 @@ import { NavLink } from 'react-router-dom'
 export default function New_collection() {
     return (
         <div className='py-10'>
-
             <div>
                 <h2 className='text-3xl font-semibold text-center border-b border-gray-400 py-2 text-red-700 font-mono'>Our New Collection</h2>
             </div> <br /> <br />
-
             <div className='grid grid-cols-4 gap-10 p-4
              max-[450px]:block max-[450px]:p-0 '>
                 {new_collections && new_collections.map((item) =>
