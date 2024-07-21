@@ -11,7 +11,6 @@ import ElectronicDetails from './Component/ReuseComponent/electronicProduct';
 import Cart from './Component/HeroComopnent/Cart';
 import LoginAccount from './Component/ReuseComponent/Login';
 import Signup from './Component/ReuseComponent/Signup';
-import Footer from './Component/main_Component/Footer';
 
 export default function App() {
   const location = useLocation();
@@ -35,7 +34,10 @@ export default function App() {
         <Route path="/productDetails/:Id" element={<ProductDetails />} />
         <Route path="/electronicDetails/:Id" element={<ElectronicDetails />} />
       </Routes>
-      {/* <Footer/> */}
+      
     </div>
+
+    
+    
   );
 }
