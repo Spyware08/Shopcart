@@ -1,6 +1,6 @@
 import React from 'react';
 import Women from '../ReuseComponent/Women';
-import New_Collection from '../ReuseComponent/New_Collection';
+import New_collection from '../ReuseComponent/New_Collection';
 import Footer from '../main_Component/Footer';
 import Main_Slider from './Slider/Main_Slider';
 import { NavLink } from 'react-router-dom';
@@ -23,7 +23,7 @@ export default function Homepage() {
         </div>
       <div className='p-10 max-[450px]:p-2'>
         <Women />
-        <New_Collection />
+        <New_collection />
       </div>
       <hr />
       <div className='my-8 pb-10 bg-gradient-to-b from-cyan-300 to-blue-100 border rounded-xl text-center'>
