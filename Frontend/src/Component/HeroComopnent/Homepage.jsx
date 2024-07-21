@@ -1,9 +1,9 @@
 import React from 'react';
 import Women from '../ReuseComponent/Women';
-import New_collection from '../ReuseComponent/New_Collection';
 import Footer from '../main_Component/Footer';
 import Main_Slider from './Slider/Main_Slider';
 import { NavLink } from 'react-router-dom';
+import New_collection from '../ReuseComponent/New_collection';
 export default function Homepage() {
   return (
     <div className='bg-gray-100 h-dvh overflow-y-scroll max-[450px]:p-0 max-[450px]:overflow-x-hidden'>
