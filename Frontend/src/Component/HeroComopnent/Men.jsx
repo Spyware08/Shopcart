@@ -13,8 +13,9 @@ export default function Men() {
       <hr className='border-gray-500 mx-auto w-[30rem]' />
       <div className='grid grid-cols-4 p-5 max-[450px]:block max-[450px]:p-1 '>
         {menProduct && menProduct.map((item) =>
-          <div className='border p-2 rounded-md 
-             max-[450px]:block max-[450px]:-ml-1 max-[450px]:w-screen max-[450px]:mb-5' key={item.id}>
+          <div className='border p-2 rounded-md m-4 bg-gray-200
+             ' key={item.id}>
+              {/* max-[450px]:block max-[450px]:-ml-1 max-[450px]:w-screen max-[450px]:mb-5 */}
             <NavLink to={`/productDetails/${item.id}`}>  <img className='hover:scale-105 transition cursor-pointer px-1 py-2 max-[450px]:w-[20rem] max-[450px]:mx-auto' src={item.image} alt={item.name} />
             </NavLink>
             <h1 className='font-semibold my-2'>{item.name}</h1>

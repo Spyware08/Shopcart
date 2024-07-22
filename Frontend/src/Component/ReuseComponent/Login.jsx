@@ -43,7 +43,7 @@ export default function LoginAccount() {
     <div className='border-spacing-1 rounded-xl m-10 max-[450px]:h-screen max-[450px]:m-0'>
       <div className="flex flex-col justify-center py-10 px-12 border max-[450px]:px-5">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <h3 className='flex items-center text-green-800 text-2xl font-bold justify-center'><FaShopify />ShopCart</h3>
+          <h3 className='flex items-center text-green-800 text-2xl font-bold justify-center'><FaShopify />Shop<span className='text-red-700'>Cart</span></h3>
           <p className='text-center text-sm text-gray-800'>Buy Top Brands Cloths and Gadgets Here.</p>
           <h2 className="mt-5 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Login to your account</h2>
         </div>

@@ -14,7 +14,7 @@ export default function Women() {
                 {
                     data_product && data_product.map((item) =>
                         <div key={item.id}>
-                            <div>
+                            <div className='bg-gray-200 p-3  max-[450px]:m-4 rounded-md'>
                                 <NavLink to={`/productDetails/${item.id}`}><img className='transition-all cursor-pointer hover:scale-105 hover:rounded max-[450px]:mx-auto max-[450px]:h-[20rem] ' src={item.image} alt={item.name} />
                                 </NavLink>
                                 <h2 className='font-semibold max-[450px]:text-sm'>{item.id}. {item.name}</h2>

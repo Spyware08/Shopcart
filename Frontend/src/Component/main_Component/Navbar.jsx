@@ -38,25 +38,25 @@ export default function Navbar() {
 
     return (
         <div className=''>
-            <div className='flex justify-between items-center p-6 bg-blue-300 max-[450px]:p-2'>
-                <div className='flex items-center font-bold text-2xl'>
-                    <span className='text-green-800 text-4xl mr-1'><FaShopify /></span>ShopCart
+            <div className='flex justify-between items-center p-6 bg-sky-500 max-[450px]:p-2'>
+                <div className='flex items-center font-semibold text-2xl'>
+                    <span className='text-green-800 text-3xl mr-1'><FaShopify /></span>Shop<span className='text-pink-700'>Cart</span>
                 </div>
                 <div className='  max-[450px]:hidden'>
                     <ul className='flex'>
-                        <li className='mx-2 font-semibold hover:text-green-700 hover:underline duration-100 cursor-pointer'>
+                        <li className='mx-2 font-semibold hover:text-red-700 hover:underline duration-100 cursor-pointer'>
                             <NavLink to="/" activeclassname={activeClass}>Home</NavLink>
                         </li>
-                        <li className='mx-2 font-semibold hover:text-green-700 hover:underline duration-100 cursor-pointer'>
+                        <li className='mx-2 font-semibold hover:text-red-700 hover:underline duration-100 cursor-pointer'>
                             <NavLink to="/men" activeclassname={activeClass}>Men</NavLink>
                         </li>
-                        <li className='mx-2 font-semibold hover:text-green-700 hover:underline duration-100 cursor-pointer'>
+                        <li className='mx-2 font-semibold hover:text-red-700 hover:underline duration-100 cursor-pointer'>
                             <NavLink to="/women" activeclassname={activeClass}>Women</NavLink>
                         </li>
-                        <li className='mx-2 font-semibold hover:text-green-700 hover:underline duration-100 cursor-pointer'>
+                        <li className='mx-2 font-semibold hover:text-red-700 hover:underline duration-100 cursor-pointer'>
                             <NavLink to="/kids" activeclassname={activeClass}>Kids</NavLink>
                         </li>
-                        <li className='mx-2 font-semibold hover:text-green-700 hover:underline duration-100 cursor-pointer'>
+                        <li className='mx-2 font-semibold hover:text-red-700 hover:underline duration-100 cursor-pointer'>
                             <NavLink to="/electronic" activeclassname={activeClass}>Electronic</NavLink>
                         </li>
                     </ul>
@@ -76,20 +76,20 @@ export default function Navbar() {
             </div>
 
             <div className='min-[450px]:hidden max-[450px]:visible  fixed bottom-0 w-screen'>
-                <ul className='flex  justify-center bg-blue-300 py-3'>
-                    <li className='mx-3 font-semibold hover:text-green-700 hover:underline duration-100 cursor-pointer'>
+                <ul className='flex  justify-center bg-sky-500 py-3'>
+                    <li className='mx-3 font-semibold hover:text-red-700 hover:underline duration-100 cursor-pointer'>
                         <NavLink to="/" activeclassname={activeClass}>Home</NavLink>
                     </li>
-                    <li className='mx-3 font-semibold hover:text-green-700 hover:underline duration-100 cursor-pointer'>
+                    <li className='mx-3 font-semibold hover:text-red-700 hover:underline duration-100 cursor-pointer'>
                         <NavLink to="/men" activeclassname={activeClass}>Men</NavLink>
                     </li>
-                    <li className='mx-3 font-semibold hover:text-green-700 hover:underline duration-100 cursor-pointer'>
+                    <li className='mx-3 font-semibold hover:text-red-700 hover:underline duration-100 cursor-pointer'>
                         <NavLink to="/women" activeclassname={activeClass}>Women</NavLink>
                     </li>
-                    <li className='mx-3 font-semibold hover:text-green-700 hover:underline duration-100 cursor-pointer'>
+                    <li className='mx-3 font-semibold hover:text-red-700 hover:underline duration-100 cursor-pointer'>
                         <NavLink to="/kids" activeclassname={activeClass}>Kids</NavLink>
                     </li>
-                    <li className='mx-3 font-semibold hover:text-green-700 hover:underline duration-100 cursor-pointer'>
+                    <li className='mx-3 font-semibold hover:text-red-700 hover:underline duration-100 cursor-pointer'>
                         <NavLink to="/electronic" activeclassname={activeClass}>Electronic</NavLink>
                     </li>
                 </ul>

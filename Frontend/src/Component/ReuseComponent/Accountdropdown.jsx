@@ -23,7 +23,7 @@ export default function Accountdropdown() {
 
     return (
         <div>
-            <button onClick={toggleDropdown}>Account</button>
+            <button onClick={toggleDropdown} className='font-medium'>Login</button>
             {
                 isDropdownOpen && (
                     <div ref={dropdownRef} className='absolute top-full right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10'>

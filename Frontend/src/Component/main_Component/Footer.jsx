@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <div className='mb-10 p-5'>
             <div className='flex justify-center items-center font-bold text-3xl'>
-                <span className='text-green-800 text-4xl mr-1'><FaShopify /></span>ShopCart
+                <span className='text-green-800 text-4xl mr-1'><FaShopify /></span>Shop<span className='text-red-700'>Cart</span>
             </div>
 
             <div className='flex justify-center  my-10 text-3xl'>
