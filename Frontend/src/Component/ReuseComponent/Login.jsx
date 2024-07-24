@@ -2,53 +2,41 @@ import React, { useState } from 'react';
 import { FaShopify } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 import API from '../../API/API';
-import { ToastContainer, toast, Slide } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function LoginAccount() {
   const navigate = useNavigate();
 
-  const [email, setEmail] = useState('demouser@gmail.com'); 
-  const [password, setPassword] = useState('12345678'); 
+  const [email, setEmail] = useState('demouser@gmail.com');
+  const [password, setPassword] = useState('12345678');
 
   async function handleSubmit(e) {
     e.preventDefault();
-    const loadingToastId = toast.loading("Please wait");
-
     if (email && password) {
+      toast.loading("Please wait")
       let log_data = {
         email: email,
         password: password
       };
-
       try {
         const res = await API.post("/login", log_data);
         sessionStorage.setItem("userData", JSON.stringify(res.data.userdata));
-        toast.update(loadingToastId, {
-          render: "Login Successful",
-          type: toast.TYPE.SUCCESS,
-          isLoading: false,
-          autoClose: 1500,
-        });
         return navigate("/");
+
       } catch (e) {
         console.error("e", e.response.status);
-        let errorMessage = "Please Fill all Details";
-
         if (e.response.status === 401) {
-          errorMessage = "Invalid Password";
+          toast.info("Invalid Password");
         } else if (e.response.status === 404) {
-          errorMessage = "User Not Found";
+          toast.info("User Not Found");
+        } else {
+          toast.error("Server Error");
         }
-
-        toast.update(loadingToastId, {
-          render: errorMessage,
-          type: toast.TYPE.INFO,
-          isLoading: false,
-          autoClose: 1500,
-        });
       }
     }
+    else toast.error("Please Fill all Details");
+
   }
 
   return (
@@ -64,14 +52,14 @@ export default function LoginAccount() {
             <div>
               <label className="block text-sm font-medium leading-6 text-gray-900">User email</label>
               <div className="mt-2">
-                <input 
-                  id="email" 
-                  name="email" 
-                  type="email" 
-                  value={email} 
-                  onChange={(e) => setEmail(e.target.value)} 
-                  required 
-                  className="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -80,29 +68,29 @@ export default function LoginAccount() {
                 <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">Password</label>
               </div>
               <div className="mt-2">
-                <input 
-                  id="password" 
-                  name="password" 
-                  type="password" 
-                  value={password} 
-                  onChange={(e) => setPassword(e.target.value)} 
-                  autoComplete="current-password" 
-                  required 
-                  className="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  autoComplete="current-password"
+                  required
+                  className="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
             <div>
-              <button 
-                type="submit" 
-                onClick={handleSubmit} 
+              <button
+                type="submit"
+                onClick={handleSubmit}
                 className="flex w-full justify-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Sign in
-              </button> 
+              </button>
               <br />
-              <button 
-                onClick={() => { navigate("/") }} 
+              <button
+                onClick={() => { navigate("/") }}
                 className="flex w-full justify-center rounded-md text-black bg-white-600 px-3 py-1.5 text-sm font-semibold leading-6 shadow-sm hover:border hover:bg-blue-200"
               >
                 Cancel
@@ -111,7 +99,7 @@ export default function LoginAccount() {
           </form>
         </div>
       </div>
-      <ToastContainer 
+      <ToastContainer
         className="max-[450px]:w-[15rem] max-[450px]:ml-[170px] max-[450px]:mt-2"
         position="top-right"
         autoClose={1500}
@@ -123,8 +111,8 @@ export default function LoginAccount() {
         draggable
         pauseOnHover
         theme="colored"
-        transition={Slide}
+        transition="Slide"
       />
     </div>
-  );
+  )
 }
