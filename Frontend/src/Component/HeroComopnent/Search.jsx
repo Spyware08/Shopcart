@@ -1,10 +1,10 @@
 import all_product from '../../../public/Assets/all_product'
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 export default function Search() {
     const [filterdata, setfilterdata] = useState([])
-    const [rangedata, setrangedata] = useState(2) 
+    const [rangedata, setrangedata] = useState(2)
     const [inputValue, setInputValue] = useState("")
 
     function handleinput(e) {
@@ -12,7 +12,8 @@ export default function Search() {
         setInputValue(inputsearch)
         if (inputsearch) {
             const filter = all_product.filter(e =>
-                e.category.toLocaleLowerCase() === inputsearch
+                e.category.toLocaleLowerCase() === inputsearch ||
+                e.name.toLocaleLowerCase().includes(inputsearch)
             )
             setfilterdata(filter)
         } else {
@@ -37,13 +38,13 @@ export default function Search() {
                     onInput={handleinput} />
             </div>
             {filterdata.length > 0 && (
-                <div className=' text-center pt-5'>
-                    <div className=' mt-2'>Rating Filter: {rangedata}</div>
+                <div className=' text-center pt-2'>
+                    <div className=' mt-1'>Rating Filter: {rangedata}</div>
                     <input type="range"
                         value={rangedata}
                         onInput={handlerange}
                         min={2} max={5}
-                        step={1} // Added step={1}
+                        step={1} 
                         className='w-[15rem]' />
                 </div>
             )}

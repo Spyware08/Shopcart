@@ -17,8 +17,9 @@ export default function Women() {
                             <div className='bg-gray-200 p-3  max-[450px]:m-4 rounded-md'>
                                 <NavLink to={`/productDetails/${item.id}`}><img className='transition-all cursor-pointer hover:scale-105 hover:rounded max-[450px]:mx-auto max-[450px]:h-[20rem] ' src={item.image} alt={item.name} />
                                 </NavLink>
-                                <h2 className='font-semibold max-[450px]:text-sm'>{item.id}. {item.name}</h2>
-                                <p className='max-[450px]:text-sm'> <span className='text-green-800 font-semibold'>Price</span>: ${item.new_price}</p> <br />
+                                <h2 className='font-semibold max-[450px]:text-sm max-[450px]:ml-[2.4rem]'>{item.id}. {item.name}</h2>
+                                <p className=' max-[450px]:text-sm max-[450px]:ml-[2.4rem]'> Category: <span className=' font-semibold'>{item.category}</span></p>
+                                <p className='max-[450px]:text-sm max-[450px]:ml-[2.4rem]'> <span className='text-green-800 font-semibold'>Price</span>: ${item.new_price}</p> <br />
                             </div>
                         </div>
                     )

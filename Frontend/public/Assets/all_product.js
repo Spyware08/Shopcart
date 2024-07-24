@@ -38,7 +38,7 @@ import p36_img from "./product_36.png";
 let all_product = [
   {
     id: 1,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Black Puffer jacket",
     category: "women",
     image: p1_img,
     new_price: 64,
@@ -48,7 +48,7 @@ let all_product = [
 
   {
     id: 2,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Full sleeve solid Men Jacket",
     category: "men",
     image: p20_img,
     new_price: 64,
@@ -58,7 +58,7 @@ let all_product = [
 
   {
     id: 3,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boy Puffed Jacket Gray",
     category: "kid",
     image: p30_img,
     new_price: 72,
@@ -67,7 +67,7 @@ let all_product = [
   },
   {
     id: 4,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Knotted red velvet Dress",
     category: "women",
     image: p4_img,
     new_price: 66,
@@ -76,7 +76,7 @@ let all_product = [
   },
   {
     id: 5,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Casual Printed Purple Top",
     category: "women",
     image: p5_img,
     new_price: 76,
@@ -85,7 +85,7 @@ let all_product = [
   },
   {
     id: 6,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys Hoddie Black Colour",
     category: "kid",
     image: p26_img,
     new_price: 85,
@@ -94,7 +94,7 @@ let all_product = [
   },
   {
     id: 7,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "White full Sleeves neck Top",
     category: "women",
     image: p7_img,
     new_price: 97,
@@ -103,7 +103,7 @@ let all_product = [
   },
   {
     id: 8,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Floral Printed Top black and white",
     category: "women",
     image: p8_img,
     new_price: 70,
@@ -113,7 +113,7 @@ let all_product = [
 
   {
     id: 9,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Full Sleeve Solid White Jacket",
     category: "men",
     image: p19_img,
     new_price: 74,
@@ -122,7 +122,7 @@ let all_product = [
   },
   {
     id: 10,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Maroon Crop Top",
     category: "women",
     image: p10_img,
     new_price: 55,
@@ -131,7 +131,7 @@ let all_product = [
   },
   {
     id: 11,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Black Blouse",
     category: "women",
     image: p11_img,
     new_price: 81,
@@ -140,7 +140,7 @@ let all_product = [
   },
   {
     id: 12,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Puma Men Sweat Jacket",
     category: "men",
     image: p13_img,
     new_price: 72,
@@ -149,7 +149,7 @@ let all_product = [
   },
   {
     id: 13,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Full Sleeve Navy blue top",
     category: "women",
     image: p12_img,
     new_price: 68,
@@ -159,7 +159,7 @@ let all_product = [
 
   {
     id: 14,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Men White and Navy Blue Jacket",
     category: "men",
     image: p14_img,
     new_price: 92,
@@ -168,7 +168,7 @@ let all_product = [
   },
   {
     id: 15,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Men Full-Zip Slim Fit Bomber Jacket",
     category: "men",
     image: p15_img,
     new_price: 87,
@@ -177,7 +177,7 @@ let all_product = [
   },
   {
     id: 16,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Waterproof Red Rain Jacket",
     category: "men",
     image: p16_img,
     new_price: 68,
@@ -186,7 +186,7 @@ let all_product = [
   },
   {
     id: 17,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Men Denim Jacket",
     category: "men",
     image: p17_img,
     new_price: 90,
@@ -195,7 +195,7 @@ let all_product = [
   },
   {
     id: 18,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Men Slim Fit Exercise Jacket",
     category: "men",
     image: p18_img,
     new_price: 59,
@@ -204,7 +204,7 @@ let all_product = [
   },
   {
     id: 19,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Floral Short Kurti Pink and White",
     category: "women",
     image: p9_img,
     new_price: 60,
@@ -213,7 +213,7 @@ let all_product = [
   },
   {
     id: 20,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Pink color Top ",
     category: "women",
     image: p2_img,
     new_price: 58,
@@ -222,7 +222,7 @@ let all_product = [
   },
   {
     id: 21,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Men Waterproof Jacket",
     category: "men",
     image: p21_img,
     new_price: 52,
@@ -231,7 +231,7 @@ let all_product = [
   },
   {
     id: 22,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Men White Zipper Hoodie",
     category: "men",
     image: p22_img,
     new_price: 79,
@@ -240,7 +240,7 @@ let all_product = [
   },
   {
     id: 23,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Men Jacket and Shirt Combo",
     category: "men",
     image: p23_img,
     new_price: 100,
@@ -249,7 +249,7 @@ let all_product = [
   },
   {
     id: 24,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Men Black Leather Jacket",
     category: "men",
     image: p24_img,
     new_price: 62,
@@ -258,7 +258,7 @@ let all_product = [
   },
   {
     id: 25,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys blue coloured Hooded Sweatshirt",
     category: "kid",
     image: p25_img,
     new_price: 71,
@@ -269,7 +269,7 @@ let all_product = [
 
   {
     id: 26,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Combo of Top and Skirt",
     category: "women",
     image: p6_img,
     new_price: 82,
@@ -278,7 +278,7 @@ let all_product = [
   },
   {
     id: 27,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys Hoddie",
     category: "kid",
     image: p27_img,
     new_price: 63,
@@ -287,7 +287,7 @@ let all_product = [
   },
   {
     id: 28,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys Green Sweatshirt",
     category: "kid",
     image: p28_img,
     new_price: 50,
@@ -296,7 +296,7 @@ let all_product = [
   },
   {
     id: 29,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys Zipperd blue and green Jacket",
     category: "kid",
     image: p29_img,
     new_price: 89,
@@ -305,7 +305,7 @@ let all_product = [
   },
   {
     id: 30,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Brown Blouse",
     category: "women",
     image: p3_img,
     new_price: 89,
@@ -315,7 +315,7 @@ let all_product = [
 
   {
     id: 31,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys Zippered Denim Jacket",
     category: "kid",
     image: p31_img,
     new_price: 65,
@@ -324,7 +324,7 @@ let all_product = [
   },
   {
     id: 32,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys Sweatshirt and Shorts Combo",
     category: "kid",
     image: p32_img,
     new_price: 90,
@@ -333,7 +333,7 @@ let all_product = [
   },
   {
     id: 33,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys Navy Blue Sweatshirt",
     category: "kid",
     image: p33_img,
     new_price: 78,
@@ -342,7 +342,7 @@ let all_product = [
   },
   {
     id: 34,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys Solid Blue Jacket",
     category: "kid",
     image: p34_img,
     new_price: 53,
@@ -351,7 +351,7 @@ let all_product = [
   },
   {
     id: 35,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys Zippered Black Coloured Jacket",
     category: "kid",
     image: p35_img,
     new_price: 92,
@@ -360,7 +360,7 @@ let all_product = [
   },
   {
     id: 36,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys Jacket and Jeans Combo Black",
     category: "kid",
     image: p36_img,
     new_price: 80,
