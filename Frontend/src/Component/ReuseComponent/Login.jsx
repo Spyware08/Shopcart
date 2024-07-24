@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaShopify } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 import API from '../../API/API';
-import { ToastContainer, toast,Slide } from 'react-toastify';
+import { ToastContainer, toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function LoginAccount() {
@@ -13,28 +13,40 @@ export default function LoginAccount() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    toast.loading("Please wait")
+    const loadingToastId = toast.loading("Please wait");
+
     if (email && password) {
       let log_data = {
         email: email,
         password: password
       };
-      // console.log("log data is", log_data);
 
       try {
         const res = await API.post("/login", log_data);
         sessionStorage.setItem("userData", JSON.stringify(res.data.userdata));
+        toast.update(loadingToastId, {
+          render: "Login Successful",
+          type: toast.TYPE.SUCCESS,
+          isLoading: false,
+          autoClose: 1500,
+        });
         return navigate("/");
-
       } catch (e) {
         console.error("e", e.response.status);
+        let errorMessage = "Please Fill all Details";
+
         if (e.response.status === 401) {
-          toast.info("Invalid Password");
+          errorMessage = "Invalid Password";
         } else if (e.response.status === 404) {
-          toast.info("User Not Found");
-        } else {
-          toast.error("Please Fill all Details");
+          errorMessage = "User Not Found";
         }
+
+        toast.update(loadingToastId, {
+          render: errorMessage,
+          type: toast.TYPE.INFO,
+          isLoading: false,
+          autoClose: 1500,
+        });
       }
     }
   }
@@ -112,7 +124,7 @@ export default function LoginAccount() {
         pauseOnHover
         theme="colored"
         transition={Slide}
-        />
+      />
     </div>
-  )
+  );
 }
