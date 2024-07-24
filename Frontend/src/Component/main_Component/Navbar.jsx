@@ -37,7 +37,7 @@ export default function Navbar() {
 
     function Showtoast() {
         console.log("hi");
-        toast.info("Please Login for Cart use")
+        toast.info("Please Login for Cart")
     }
 
     return (
