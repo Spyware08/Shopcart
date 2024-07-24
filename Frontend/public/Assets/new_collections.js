@@ -58,7 +58,7 @@ let new_collections = [
   },
   {
     id: 17,
-    name: "Men Denim Jacket",
+    name: " Denim Jacket for men",
     category:"Men",
     image: p7_img,
     new_price: 90.0,
