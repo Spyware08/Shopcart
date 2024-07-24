@@ -16,6 +16,7 @@ export default function Search() {
                 e.name.toLocaleLowerCase().includes(inputsearch)
             )
             setfilterdata(filter)
+            setrangedata(2)
         } else {
             setfilterdata([])
         }
