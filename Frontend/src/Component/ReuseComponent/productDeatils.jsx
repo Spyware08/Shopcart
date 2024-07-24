@@ -44,9 +44,9 @@ function ProductDetails() {
             <button className='border rounded-lg bg-orange-600 px-5 py-2  text-white'>
 
               {userData ? <NavLink to='/cart' onClick={() => addToCart(product)}>Add to Cart</NavLink>
-                : <p className='cursor-not-allowed'>Please Login for Buy</p>}
+                : <NavLink to="/login">Please Login to buy
+                  </NavLink>}
             </button>
-            {/* <button className='border rounded-lg  px-5 py-2 bg-green-600 text-white'>Buy Now</button> */}
           </div>
         </div>
       </div>

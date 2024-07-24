@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { CiShoppingCart } from "react-icons/ci";
 import { FaShopify } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
@@ -7,6 +7,8 @@ import Accountdropdown from '../ReuseComponent/Accountdropdown';
 import Username from '../ReuseComponent/Username';
 import { TbShoppingCartCancel } from "react-icons/tb";
 import { IoSearchOutline } from "react-icons/io5";
+import { ToastContainer, toast, Slide } from 'react-toastify';
+
 
 const activeClass = "text-green-900";
 
@@ -32,6 +34,11 @@ export default function Navbar() {
             setUserData(JSON.parse(storedUserData));
         }
     }, []);
+
+    function Showtoast() {
+        console.log("hi");
+        toast.info("Please Login for Cart use")
+    }
 
     return (
         <div className=''>
@@ -70,13 +77,14 @@ export default function Navbar() {
                         {userData ? <NavLink to="/cart" className="flex items-center">
                             <CiShoppingCart />
                             <span className='text-white bg-orange-600 text-xs px-[5px] rounded-full -ml-[10px] -mt-[15px]'>{cartItems.length}</span>
-                        </NavLink> : <div className='text-gray-500 cursor-not-allowed'><TbShoppingCartCancel /></div>}
+                        </NavLink> :
+                            <div className='text-gray-500 cursor-pointer ml-1'><TbShoppingCartCancel onClick={Showtoast} /></div>}
                     </div>
                 </div>
             </div>
 
-            <div className='min-[450px]:hidden max-[450px]:visible  fixed bottom-0 w-screen'>
-                <ul className='flex  justify-center bg-sky-500 py-3'>
+            <div className='min-[450px]:hidden max-[450px]:visible fixed bottom-0 w-screen'>
+                <ul className='flex justify-center bg-sky-500 py-3'>
                     <li className='mx-3 font-semibold hover:text-red-700 hover:underline duration-100 cursor-pointer'>
                         <NavLink to="/" activeclassname={activeClass}>Home</NavLink>
                     </li>
@@ -94,6 +102,18 @@ export default function Navbar() {
                     </li>
                 </ul>
             </div>
+            <ToastContainer
+                className="max-[450px]:w-[15rem]"
+                position="top-center"
+                autoClose={1500}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                draggable
+                theme="colored"
+                transition={Slide}
+            />
         </div>
     );
 }

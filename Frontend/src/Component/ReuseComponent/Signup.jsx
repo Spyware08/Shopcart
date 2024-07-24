@@ -4,7 +4,7 @@ import { FaShopify } from "react-icons/fa6";
 
 
 import { useNavigate } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast,Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -108,8 +108,8 @@ export default function Signup() {
                     draggable
                     pauseOnHover
                     theme="colored"
-                    transition:Slide
-                />
+                    transition={Slide}
+                    />
             </form>
         </>
     );

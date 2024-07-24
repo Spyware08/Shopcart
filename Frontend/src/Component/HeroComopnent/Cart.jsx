@@ -1,7 +1,7 @@
 import React from 'react';
 import { useCart } from '../CartFile/cart_context';
 import { MdDelete } from "react-icons/md";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Cart() {
@@ -80,8 +80,8 @@ export default function Cart() {
         draggable
         pauseOnHover={false}
         theme="light"
-        transition:Slide
-/>
+        transition={Slide}
+      />
     </div>
   );
 }
