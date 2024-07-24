@@ -111,8 +111,8 @@ export default function LoginAccount() {
         draggable
         pauseOnHover
         theme="colored"
-        transition="Slide"
-      />
+        transition={Slide}
+        />
     </div>
   )
 }

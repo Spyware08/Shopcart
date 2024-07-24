@@ -7,7 +7,7 @@ import New_collection from '../ReuseComponent/New_collection';
 export default function Homepage() {
   return (
     <div className='bg-gray-100 h-dvh overflow-y-scroll max-[450px]:p-0 max-[450px]:overflow-x-hidden'>
-      <Main_Slider />
+      <Main_Slider/>
       <div className='flex  justify-between m-2 px-5 py-3 border rounded max-[450px]:block max-[450px]:w-screen max-[450px]:px-1'>
             <div className='my-5 max-[450px]:my-0'>
                 <h2 className='text-red-700 text-xl font-semibold max-[450px]:text-lg'>Welcome Here</h2>
@@ -26,11 +26,11 @@ export default function Homepage() {
         <New_collection />
       </div>
       <hr />
-      <div className='my-8 pb-10 bg-gradient-to-b from-cyan-300 to-blue-100 border rounded-xl text-center'>
+      <div className='my-8 pb-10 bg-gradient-to-b from-cyan-300 to-blue-200 border rounded-xl text-center'>
         <h2 className='text-3xl my-8 font-semibold'>Get Exclusive Offers On Your Email</h2>
         <p className='my-4 text-xl font-medium text-gray-700'>Subscribe to get Offers Updates</p>
-        <div className='flex justify-center items-center max-[450px]:flex-col'>
-          <input type='email' placeholder='Your Email id' className='px-5 py-3 rounded-full outline-none w-[30rem] max-[450px]:w-[20rem] mb-4 max-[450px]:mb-2' />
+        <div className='flex justify-center items-center gap-2 max-[450px]:flex-col'>
+          <input type='email' placeholder='Your Email id' className='px-5 py-3 rounded-full outline-none w-[30rem] max-[450px]:w-[20rem] max-[450px]:mb-2' />
           <button className='font-semibold hover:bg-green-600 hover:text-white px-4 py-2 rounded-xl transition border max-[450px]:w-[10rem]'>Subscribe</button>
         </div>
       </div>

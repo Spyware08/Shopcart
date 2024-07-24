@@ -103,7 +103,7 @@ export default function Navbar() {
                 </ul>
             </div>
             <ToastContainer
-                className="max-[450px]:w-[15rem]"
+                className="max-[450px]:w-[18rem]"
                 position="top-center"
                 autoClose={1500}
                 hideProgressBar={false}

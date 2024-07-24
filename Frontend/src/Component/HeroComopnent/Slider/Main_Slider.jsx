@@ -1,5 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { NavLink } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -18,21 +19,23 @@ export default function Main_Slider() {
                 disableOnInteraction: false,
             }}
             effect="fade"
-            loop={true} 
+            loop={true}
             pagination={{
                 clickable: true,
             }}
         >
             <SwiperSlide>
-            <img src='/Assets/women.jpg' className='' alt='women_slider' />
+                <NavLink to="/women"> <img src='/Assets/women.jpg' className='' alt='women_slider' /></NavLink>
             </SwiperSlide>
             <SwiperSlide>
-            <img src='/Assets/Men.jpg' className='' alt='Men_slider' />
+                <NavLink to="/men"><img src='/Assets/Men.jpg' className='' alt='Men_slider' />
+                </NavLink>
             </SwiperSlide>
             <SwiperSlide>
-            <img src='/Assets/kids.jpg' className='' alt='kids_slider' />
+                <NavLink to="/kids"><img src='/Assets/kids.jpg' className='' alt='kids_slider' />
+                </NavLink>
             </SwiperSlide>
-           
+
         </Swiper>
     );
 }
