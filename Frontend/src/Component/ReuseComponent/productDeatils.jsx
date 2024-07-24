@@ -30,6 +30,8 @@ function ProductDetails() {
           <p></p>
           <p className='max-[450px]:text-sm'>New Price: <span className='text-green-800 font-semibold' > ${product.new_price}</span></p>
           <p className='max-[450px]:text-sm'>Old Price: <span className='line-through text-gray-600 font-semibold' >${product.old_price}</span></p>
+          <p className='max-[450px]:text-sm'>Rating: <span className=''><span className='text-green-800 font-bold'>{product.rating}</span>/5</span></p>
+
           <p className='my-4 font-sans max-w-[43rem] max-[450px]:text-sm max-[450px]:mt-1'>Elevate your brand with custom unisex shirts. Versatile and professional, they offer high visibility and build brand recognition. Customization options ensure a unique look aligned with your brand values. From corporate events to promotional giveaways,leaving a lasting impression on your audience.</p>
           <div className='flex max-[450px]:-mt-3 '>
             <li className='list-none flex items-center justify-center  h-[2rem] w-[2rem] m-1 p-2 border rounded-md'>S</li>
@@ -46,7 +48,6 @@ function ProductDetails() {
             </button>
             {/* <button className='border rounded-lg  px-5 py-2 bg-green-600 text-white'>Buy Now</button> */}
           </div>
-          <label className='font-serif'>Enter your Pincode: <input type="number" placeholder='Pincode' className='border px-2 py-1' /></label>
         </div>
       </div>
     </div>

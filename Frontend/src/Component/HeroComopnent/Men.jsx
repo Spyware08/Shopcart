@@ -24,6 +24,7 @@ export default function Men() {
               New Price: <span className='text-green-900 font-semibold mr-2'>${item.new_price} </span>
               <span className='text-gray-600 font-semibold line-through'>${item.old_price}</span>
             </p>
+            <h1 className='max-[450px]:text-sm'>Rating: <span className=''><span className='text-green-800 font-bold'>{item.rating}</span>/5</span></h1>
 
           </div>
         )}

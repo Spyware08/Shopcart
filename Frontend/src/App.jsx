@@ -11,6 +11,7 @@ import ElectronicDetails from './Component/ReuseComponent/electronicProduct';
 import Cart from './Component/HeroComopnent/Cart';
 import LoginAccount from './Component/ReuseComponent/Login';
 import Signup from './Component/ReuseComponent/Signup';
+import Search from './Component/HeroComopnent/Search';
 
 export default function App() {
   const location = useLocation();
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<LoginAccount />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/search" element={<Search />} />
         <Route path="/productDetails/:Id" element={<ProductDetails />} />
         <Route path="/electronicDetails/:Id" element={<ElectronicDetails />} />
       </Routes>

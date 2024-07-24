@@ -6,6 +6,8 @@ import { useCart } from '../CartFile/cart_context';
 import Accountdropdown from '../ReuseComponent/Accountdropdown';
 import Username from '../ReuseComponent/Username';
 import { TbShoppingCartCancel } from "react-icons/tb";
+import { IoSearchOutline } from "react-icons/io5";
+
 const activeClass = "text-green-900";
 
 export default function Navbar() {
@@ -18,17 +20,12 @@ export default function Navbar() {
     //       firstname: "DEMOUser",
     //       lastname: "aman",
     //       token: "abc"
-          
+
     //     }
     //     localStorage.setItem("userData", JSON.stringify(userData));
     //     console.log(userData);
     //   }
-    
-    
     //   demoUser()
-
-
-
     useEffect(() => {
         const storedUserData = sessionStorage.getItem("userData");
         if (storedUserData) {
@@ -62,6 +59,9 @@ export default function Navbar() {
                     </ul>
                 </div>
                 <div className='flex relative items-center mx-5' >
+                    <NavLink to="/search" activeclassname={activeClass}><p className='text-lg cursor-pointer px-2'><IoSearchOutline /></p></NavLink>
+
+
                     <div className='mx-2 cursor-pointer' >
                         {userData ? <Username firstname={userData.firstname} /> : <Accountdropdown />}
                     </div>
