@@ -23,7 +23,7 @@ export default function Electronics() {
               <h1 className='font-semibold'>{item.name}</h1> <hr className='border-gray-300' />
               <h1 className='font-serif max-[450px]:text-sm'>Category: <span className='capitalize font-semibold font-sans'>{item.category}</span></h1>
               <p className='font-serif max-[450px]:text-sm'>
-                New price: <span className='text-green-900 font-semibold mr-2 font-sans'>${item.new_price} </span>
+                Offer price: <span className='text-green-900 font-semibold mr-2 font-sans'>${item.new_price} </span>
               </p>
               <p className='font-serif'>Rating:  <span className='font-sans'>{item.rating.rate} </span>/ 5</p>
 
