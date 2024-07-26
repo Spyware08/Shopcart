@@ -3,7 +3,6 @@ import { NavLink, useParams } from 'react-router-dom';
 import { useCart } from '../CartFile/cart_context';
 import all_product from '../../../public/Assets/all_product';
 
-
 function ProductDetails() {
   const { Id } = useParams();
   const [userData, setUserData] = useState(null);

@@ -1,8 +1,6 @@
 import React, { useRef } from 'react';
 import API from '../../API/API';
 import { FaShopify } from "react-icons/fa6";
-
-
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast,Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

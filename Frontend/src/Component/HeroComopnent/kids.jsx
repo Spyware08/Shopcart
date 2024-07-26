@@ -32,11 +32,6 @@ export default function Kids() {
       <div className='my-5 mb-5'>
         <Footer />
       </div>
-
-
-
     </div>
-
-
   )
 }

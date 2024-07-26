@@ -23,8 +23,6 @@ function ElectronicDetails() {
         }
     }, []);
 
-
-
     return (
         <div className='p-3 overflow-y-scroll max-[450px]:w-screen max-[450px]:pb-[7rem] h-dvh max-[450px]:overflow-x-hidden'>
             <div className='flex justify-center max-[450px]:block '>

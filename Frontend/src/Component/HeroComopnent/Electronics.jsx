@@ -3,9 +3,6 @@ import { NavLink } from 'react-router-dom'
 import { electronics } from "../../../public/Assets/Electonics"
 import Footer from '../main_Component/Footer'
 
-
-
-
 export default function Electronics() {
 
   return (

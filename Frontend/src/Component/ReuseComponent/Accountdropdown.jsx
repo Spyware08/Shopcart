@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Accountdropdown() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const dropdownRef = useRef(null); // Define dropdownRef using useRef hook
+    const dropdownRef = useRef(null); 
 
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);

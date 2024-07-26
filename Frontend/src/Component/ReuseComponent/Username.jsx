@@ -19,7 +19,6 @@ export default function Username(props) {
         <div>
             <button onClick={toggleDropdown}>Hi, <span className='capitalize font-semibold'>{props.firstname}</span></button>
 
-
             {
                 dropDown && (
                     <div className='absolute top-full right-0 mt-2 w-32 bg-white rounded-md shadow-lg z-10'>
@@ -30,11 +29,6 @@ export default function Username(props) {
                 )
 
             }
-
-
-
-
-
         </div>
     )
 }

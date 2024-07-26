@@ -4,6 +4,7 @@ import Footer from '../main_Component/Footer';
 import Main_Slider from './Slider/Main_Slider';
 import { NavLink } from 'react-router-dom';
 import New_collection from '../ReuseComponent/New_collection';
+import Infinite_iconScroll from '../ReuseComponent/Infinite_iconScroll';
 export default function Homepage() {
   return (
     <div className='bg-gray-100 h-dvh overflow-y-scroll max-[450px]:p-0 max-[450px]:overflow-x-hidden'>
@@ -26,6 +27,7 @@ export default function Homepage() {
         <New_collection />
       </div>
       <hr />
+      <Infinite_iconScroll/>
       <div className='my-8 pb-10 bg-gradient-to-b from-cyan-300 to-blue-200 border rounded-xl text-center'>
         <h2 className='text-3xl my-8 font-semibold'>Get Exclusive Offers On Your Email</h2>
         <p className='my-4 text-xl font-medium text-gray-700'>Subscribe to get Offers Updates</p>

@@ -15,7 +15,6 @@ export default function Footer() {
                 <span className='mx-3 cursor-pointer transition ease-linear hover:text-green-800 hover:scale-125'><FaWhatsapp /></span>
                 <span className='mx-3 cursor-pointer transition ease-linear hover:text-purple-800 hover:scale-125'><FaInstagram /></span>
                 <span className='mx-3 cursor-pointer transition ease-linear hover:text-blue-500 hover:scale-125'><CiTwitter /></span>
-
             </div>
             <hr className='border-slate-400' />
 
