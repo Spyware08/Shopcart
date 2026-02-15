@@ -8,7 +8,7 @@ const app = express()
 const port = 8080
 const cors_options = {
     // origin: ["https://shopcart-delta.vercel.app"],
-    origin: ["http://192.168.40.94:5173","http://10.136.57.251:5173"],
+    origin: ["http://192.168.40.94:5173","http://10.136.57.251:5173","https://shopcart-delta.vercel.app"],
    
     methods:["GET","POST"],
     credentials: true,
