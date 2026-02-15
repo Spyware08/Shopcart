@@ -5,11 +5,11 @@ import { SignupRoute } from "./Routes/Signup.js"
 import { LoginRoute } from "./Routes/Login.js"
 const app = express()
 
-
 const port = 8080
 const cors_options = {
-    origin: ["https://shopcart-delta.vercel.app"],
-
+    // origin: ["https://shopcart-delta.vercel.app"],
+    origin: ["http://192.168.40.94:5173","http://10.136.57.251:5173"],
+   
     methods:["GET","POST"],
     credentials: true,
 
@@ -18,6 +18,23 @@ const cors_options = {
 connectToDB()
 app.use(cors(cors_options))
 app.use(express.json()) 
+app.set("trust proxy", true)
+
+app.get("/ipCheck", (req, res) => {
+
+    const clientIP =
+        req.headers["x-forwarded-for"]?.split(",")[0] ||
+        req.socket.remoteAddress;
+
+    const cleanIP = clientIP?.replace(/^::ffff:/, "");
+
+    console.log("Client IP", cleanIP)
+    
+
+    res.status(200).json({
+        ip: cleanIP
+    })
+})
 
 
 app.use(SignupRoute)
