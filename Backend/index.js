@@ -36,6 +36,21 @@ app.get("/ipCheck", (req, res) => {
     })
 })
 
+app.get("/", (req, res) => {
+
+   
+       const clientIP =
+        req.headers["x-forwarded-for"]?.split(",")[0] ||
+        req.socket.remoteAddress;
+
+    const cleanIP = clientIP?.replace(/^::ffff:/, "");
+
+    res.status(200).json({
+        msg: "Running ",
+        ip:clientIP
+    })
+})
+
 
 app.use(SignupRoute)
 app.use(LoginRoute)
