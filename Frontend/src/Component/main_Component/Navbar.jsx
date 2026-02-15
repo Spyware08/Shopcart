@@ -8,6 +8,7 @@ import Username from '../ReuseComponent/Username';
 import { TbShoppingCartCancel } from "react-icons/tb";
 import { IoSearchOutline } from "react-icons/io5";
 import { ToastContainer, toast, Slide } from 'react-toastify';
+import API from '../../API/API';
 
 
 const activeClass = "text-green-900";
@@ -36,15 +37,28 @@ export default function Navbar() {
     }, []);
 
     function Showtoast() {
-        console.log("hi");
         toast.info("Please Login for Cart")
+
     }
+
+  async function checkIP() {
+    console.log("run");
+    
+    try {
+        const response = await API.get("/ipCheck")
+        console.log(response.data.ip)
+        toast.success(`IP is ${response.data.ip}`)
+    } catch (err) {
+        console.log(err)
+    }
+}
+
 
     return (
         <div className=''>
             <div className='flex justify-between items-center p-6 bg-sky-500 max-[450px]:p-2'>
                 <div className='flex items-center font-semibold text-2xl'>
-                    <span className='text-green-800 text-3xl mr-1'><FaShopify /></span>Shop<span className='text-pink-700'>Cart</span>
+                    <span className='text-green-800 text-3xl mr-1'><FaShopify /></span>Shop<span onClick={()=>checkIP()} className='text-pink-700'>Cart</span>
                 </div>
                 <div className='  max-[450px]:hidden'>
                     <ul className='flex'>
