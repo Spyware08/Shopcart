@@ -99,20 +99,19 @@ export default function LoginAccount() {
           </form>
         </div>
       </div>
-      <ToastContainer
-        className="max-[450px]:w-[15rem] max-[450px]:ml-[170px] max-[450px]:mt-2"
-        position="top-right"
-        autoClose={1500}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="colored"
-        transition={Slide}
-        />
+    <ToastContainer
+  position="top-center"
+  autoClose={1500}
+  hideProgressBar={false}
+  newestOnTop={false}
+  closeOnClick
+  rtl={false}
+  pauseOnFocusLoss
+  draggable
+  pauseOnHover
+  theme="colored"
+  transition={Slide}
+/>
     </div>
   )
 }
