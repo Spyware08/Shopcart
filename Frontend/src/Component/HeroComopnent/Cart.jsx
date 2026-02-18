@@ -69,7 +69,7 @@ export default function Cart() {
           )}
         </div>
       </div>
-      <ToastContainer className="max-[450px]:w-[15rem] max-[450px]:ml-[170px] max-[450px]:mt-2"
+      {/* <ToastContainer className="max-[450px]:w-[15rem] max-[450px]:ml-[170px] max-[450px]:mt-2"
         position="top-right"
         autoClose={1000}
         hideProgressBar={false}
@@ -81,7 +81,7 @@ export default function Cart() {
         pauseOnHover={false}
         theme="light"
         transition:Slide
-/>
+/> */}
     </div>
   );
 }
